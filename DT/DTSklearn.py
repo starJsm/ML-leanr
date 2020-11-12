@@ -13,7 +13,7 @@ def createDataSet():
     ''' 数据读入 '''
     data = []
     labels = []
-    with open("data/3.DecisionTree/data.txt") as ifile:
+    with open("ML-leanr\data\3.DecisionTree\data.txt") as ifile:
         for line in ifile:
             # 特征:  身高 体重   label:  胖瘦
             tokens = line.strip().split(' ')
@@ -114,4 +114,4 @@ if __name__ == '__main__':
     show_precision_recall(x, y, clf, y_train, y_pre)
 
     # 可视化输出
-    show_pdf(clf)
+    # show_pdf(clf)
